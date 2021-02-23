@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+
+.header {
+  text-align: center;
+  color: white;
+  background-color: red;
+  padding: 24px 0;
+}
+
+.wrapper {
+  padding: 0 24px;
+  padding-top: 36px;
+  font-family: "Baloo 2", cursive;
+}
+
+.products-list {
+  border: 1px solid gray;
+  border-radius: 16px;
+}
+
+.list-item {
+  display: flex;
+  height: 200px;
+  border-bottom: 1px solid gray;
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__link {
+    width: 20%;
+  }
+
+  &__img {
+    padding: 16px;
+  }
+
+  &__descriptions {
+    margin-left: 16px;
+    width: 60%;
+    padding: 32px 0;
+    color: black;
+    border-right: 1px solid gray;
+  }
+  &__name {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  &__description {
+    margin-top: 16px;
+    font-family: sans-serif;
+    color: gray;
+    font-size: 18px;
+  }
+  &__options {
+    margin-top: 12px;
+  }
+  &__button {
+    width: 10%;
+  }
+}
