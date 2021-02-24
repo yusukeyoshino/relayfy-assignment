@@ -142,8 +142,14 @@
 }
 
 .selected-item__price {
-  display: flex;
   justify-content: space-between;
+  font-size: 11px;
+}
+
+@media (min-width: 768px) {
+  .selected-item__price {
+    font-size: 16px;
+  }
 }
 
 .ui-btn {

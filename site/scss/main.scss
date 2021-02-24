@@ -117,8 +117,11 @@
 
 .selected-item {
   &__price {
-    display: flex;
     justify-content: space-between;
+    font-size: 11px;
+    @media (min-width: $breakpoint-md) {
+      font-size: 16px;
+    }
   }
 }
 

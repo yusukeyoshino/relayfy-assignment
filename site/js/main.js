@@ -102,6 +102,7 @@ function productAdded(component) {
   orderLineItems[productId] = orderLineItem;
   calculatePrice();
   disableNonApplePayButton(false);
+
   repaintSelectedList();
 }
 
@@ -133,7 +134,7 @@ function repaintSelectedList() {
         "</h2>" +
         '<div class="selected-item__price">' +
         "<p>" +
-        orderLineItem.count +
+        `Unit:${orderLineItem.count}` +
         "</p>" +
         "<p>" +
         `Subtotal: ${priceFormatter(
