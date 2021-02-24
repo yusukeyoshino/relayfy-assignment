@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+.header {
+  text-align: center;
+  color: white;
+  background-color: red;
+  padding: 24px 0;
+}
+
+.wrapper {
+  padding: 0 24px;
+  padding-top: 36px;
+  font-family: "Baloo 2", cursive;
+}
+
+.products-list {
+  border: 1px solid #cfcece;
+  border-radius: 16px;
+  box-shadow: 0 3px 14px #cfcece;
+}
+
+.list-item {
+  display: flex;
+  height: 200px;
+  border-bottom: 1px solid #cfcece;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item__link {
+  width: 20%;
+}
+
+.list-item__img {
+  padding: 16px;
+}
+
+.list-item__descriptions {
+  margin-left: 16px;
+  width: 60%;
+  padding: 32px 0;
+  color: black;
+  border-right: 1px solid #cfcece;
+}
+
+.list-item__name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.list-item__description {
+  margin-top: 16px;
+  font-family: sans-serif;
+  color: gray;
+  font-size: 18px;
+}
+
+.list-item__options {
+  margin-top: 12px;
+}
+
+.list-item__button {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item__button-icon {
+  font-size: 24px;
+  background-size: 32px;
+  transform: scale(1.3);
+}
+
+.list-item__price {
+  margin-top: 16px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: gray;
+}
+
+.list-item__option {
+  padding: 8px 12px;
+  border: 1px solid #cfcece;
+  font-size: 16px;
+}
+
+.ui-btn {
+  border-width: 0px;
+}
+
+.ui-btn-active {
+  color: transparent;
+  background-color: transparent;
+}
