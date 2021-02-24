@@ -131,9 +131,16 @@ function repaintSelectedList() {
         "<h2>" +
         orderLineItem.product.name +
         "</h2>" +
+        '<div class="selected-item__price">' +
         "<p>" +
         orderLineItem.count +
         "</p>" +
+        "<p>" +
+        `Subtotal: ${priceFormatter(
+          orderLineItem.product.price * orderLineItem.count
+        )}` +
+        "</p>" +
+        "</div>" +
         '<a id="btn_' +
         orderLineItem.product.id +
         '_add" onclick="productRemoved(this)" href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Remove</a>' +
@@ -184,4 +191,8 @@ function calculatePrice() {
   finalAmount = subTotal;
   console.log("Final amount : " + finalAmount);
   console.log(JSON.stringify(finalOrder));
+}
+
+function priceFormatter(rawPrice) {
+  return `$${rawPrice / 100}`;
 }

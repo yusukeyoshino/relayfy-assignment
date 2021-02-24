@@ -28,8 +28,14 @@
 
 .list-item {
   display: flex;
-  height: 200px;
+  height: 150px;
   border-bottom: 1px solid #cfcece;
+}
+
+@media (min-width: 768px) {
+  .list-item {
+    height: 200px;
+  }
 }
 
 .list-item:last-child {
@@ -49,7 +55,7 @@
 .list-item__descriptions {
   margin-left: 8px;
   width: 50%;
-  padding: 32px 0;
+  padding: 16px 0;
   color: black;
   border-right: 1px solid #cfcece;
 }
@@ -123,9 +129,21 @@
 }
 
 .list-item__option {
-  padding: 8px 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
   border: 1px solid #cfcece;
   font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .list-item__option {
+    padding: 8px 12px;
+  }
+}
+
+.selected-item__price {
+  display: flex;
+  justify-content: space-between;
 }
 
 .ui-btn {

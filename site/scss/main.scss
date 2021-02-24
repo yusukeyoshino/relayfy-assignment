@@ -29,8 +29,11 @@
 
 .list-item {
   display: flex;
-  height: 200px;
+  height: 150px;
   border-bottom: 1px solid $primary-color;
+  @media (min-width: $breakpoint-md) {
+    height: 200px;
+  }
   &:last-child {
     border-bottom: none;
   }
@@ -49,7 +52,7 @@
   &__descriptions {
     margin-left: 8px;
     width: 50%;
-    padding: 32px 0;
+    padding: 16px 0;
     color: black;
     border-right: 1px solid $primary-color;
 
@@ -102,9 +105,20 @@
     }
   }
   &__option {
-    padding: 8px 12px;
+    padding: 4px 8px;
+    border-radius: 8px;
     border: 1px solid $primary-color;
     font-size: 16px;
+    @media (min-width: $breakpoint-md) {
+      padding: 8px 12px;
+    }
+  }
+}
+
+.selected-item {
+  &__price {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
