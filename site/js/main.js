@@ -64,9 +64,11 @@ function loadProducts() {
             " ea.</p>"
           : buildOptions(orderLineItem.product.options)) +
         "</div>" +
-        '<a class="list-item__button ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext" id="btn_' +
+        '<div class="list-item__button">' +
+        '<a class="list-item__button-icon ui-btn ui-btn-a ui-corner-all ui-icon-plus ui-btn-icon-notext" id="btn_' +
         orderLineItem.product.id +
-        '_add" onclick="productAdded(this)" href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>' +
+        '_add" onclick="productAdded(this)" href="#purchase"></a>' +
+        "</div>" +
         "</li>";
 
       listItems.push(listItem);
@@ -83,7 +85,7 @@ function buildOptions(options) {
   $.each(options, function (size, price) {
     optionsHTML =
       optionsHTML +
-      "<button onclick=\"console.log('hello')\">" +
+      "<button class='list-item__option' onclick=\"console.log('hello')\">" +
       size +
       "</button>&nbsp;&nbsp;";
   });
