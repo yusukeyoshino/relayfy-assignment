@@ -76,6 +76,7 @@ function loadProducts() {
 
     $("#all-products").append(listItems.join("")).listview("refresh");
     // Task 2: Add the missing line. Hint: The list may need to be refreshed to reapply the styles as the list is build dynamically instead of static
+    // I added this line to refresh the listItems but I wanted to style them in the plain css so I deleted the listview attribute from all products list element.
   });
 }
 
