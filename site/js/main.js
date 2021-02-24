@@ -116,7 +116,20 @@ function productRemoved(component) {
   }
   calculatePrice();
   repaintSelectedList();
-  if (orderLineItem.count == 0) disableNonApplePayButton(true);
+
+  // check each of counts of selected items is zero.
+  if (checkOrderLineItemsIsEmpty()) {
+    disableNonApplePayButton(true);
+  }
+}
+
+function checkOrderLineItemsIsEmpty() {
+  for (const [key, value] of Object.entries(orderLineItems)) {
+    if (value.count !== 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 function repaintSelectedList() {
