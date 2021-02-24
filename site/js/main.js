@@ -74,7 +74,7 @@ function loadProducts() {
       listItems.push(listItem);
     });
 
-    $("#all-products").append(listItems.join(""));
+    $("#all-products").append(listItems.join("")).listview("refresh");
     // Task 2: Add the missing line. Hint: The list may need to be refreshed to reapply the styles as the list is build dynamically instead of static
   });
 }
