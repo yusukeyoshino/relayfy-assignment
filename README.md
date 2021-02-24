@@ -2,11 +2,7 @@
 
 ## How to start
 
-Clone this repository and run the command.
-
-    npm install
-
-Then run the local server using VSCode live server extension.
+Clone this repository and run the local server using VSCode live server extension.
 
 ## Dependencies
 
