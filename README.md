@@ -1,4 +1,4 @@
-# Relayfy Assignment
+# Relayfy Assignment 1
 
 ## How to start
 
@@ -28,3 +28,12 @@ function checkOrderLineItemsIsEmpty() {
 	return  true;
 }
 ```
+
+# Relayfy Assignment 2
+
+## UX improvement
+
+- The pop up modal to choose "Dine-in, Take-out and Pre-order" might need to be shown when the app opens.
+- When reloading the browser, all selected meals gets refreshed as well. It might be stored in local storage.
+- When user tap Stripe element or "Pay in person", user might want to check what they select to make sure thier order is correct. So when user tap those buttons, The pop up modal for selected meals would be shown then they can go pay.
+- When the app is opened on small display devices(iPhone5/6/7/8) and select some meals you can hardly see the menu. The selected meals might need to be stored in the other pop up modal or I think the bottom part(tip,Stripe element and "pay in person" button) can be smaller. For example, remove the tip part and show it when user click a pay button. Another example, the Stripe element and "pay in person" button can be in the one line.
