@@ -43,4 +43,5 @@ I made a demo to implement some of the comments above.
 I only styled it for mobile devices so please check it in small display size.
 
 Deployed [here](https://friendly-neumann-a33561.netlify.app/)
+
 [https://friendly-neumann-a33561.netlify.app/](https://friendly-neumann-a33561.netlify.app/)
