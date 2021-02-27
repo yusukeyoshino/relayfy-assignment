@@ -33,7 +33,8 @@ function checkOrderLineItemsIsEmpty() {
 
 ## UX improvement
 
-- When reloading the browser, all selected meals get refreshed.- When a user taps the Stripe element or "Pay in person", the user might want to check what they select to make sure their order is correct. So when users tap those buttons, the pop up modal for selected meals would be shown then they can go pay.
+- When reloading the browser, all selected meals get refreshed.
+- When a user taps the Stripe element or "Pay in person", the user might want to check what they select to make sure their order is correct. So when users tap those buttons, the pop up modal for selected meals would be shown then they can go pay.
 - When the app is opened on small display devices(iPhone5/6/7/8) and select some meals you can hardly see the menu. The selected meals might need to be stored in the other pop up modal or I think the bottom part(tip,Stripe element and "pay in person" button) can be smaller. For example, remove the tip part and show it when the user clicks a pay button. Another example, the Stripe element and "pay in person" button can be in the one line.
 - The selected meals list might need to be scrollable. I tried to touch arrows in the selected meals list in iPhone7 but it was really difficult.
 
